@@ -29,16 +29,18 @@
         <!-- Navbar -->
         <nav id="navbar"
             class="menuMobile transition-all sticky top-0 bg-gray-100 py-5 flex items-center justify-between border-b">
-            <h4 class="font-bold text-xl">Chatify.</h4>
+            <h4 class="font-bold text-xl">
+                <a href="#product">Chatify.</a>
+            </h4>
             <ul id="menu"
-                class="opacity-0 transition-all gap-5 pb-3 bg-gray-100 w-full absolute left-2/4 -bottom-28 transform -translate-x-2/4 flex items-center flex-col sm:opacity-100 sm:w-0 sm:flex-row sm:relative sm:left-0 sm:bottom-0 sm:translate-x-0">
-                <li class="hover:underline cursor-pointer">
-                    <a href="#product" onclick="toggle()">Product</a>
+                class="opacity-0 transition-all gap-5 bg-gray-100 w-full absolute left-2/4 -bottom-28 transform -translate-x-2/4 flex justify-center items-center flex-col sm:opacity-100 sm:w-0 sm:flex-row sm:relative sm:left-0 sm:bottom-0 sm:translate-x-0">
+                <li class="hover:underline cursor-pointer text-lg font-semibold">
+                    <a href="#features" onclick="toggle()">Features</a>
                 </li>
-                <li class="hover:underline cursor-pointer">
+                <li class="hover:underline cursor-pointer text-lg font-semibold">
                     <a href="#about" onclick="toggle()">About</a>
                 </li>
-                <li class="hover:underline cursor-pointer">
+                <li class="hover:underline cursor-pointer text-lg font-semibold">
                     <a href="#contact" onclick="toggle()">Contact</a>
                 </li>
             </ul>
@@ -64,19 +66,66 @@
                     Experience the ease of Chatify today for truly frictionless chatting.</p>
             </div>
             <div class="flex justify-center">
-                <img src="Background.svg" class="max-w-full h-auto" alt="Illustration">
+                <img src="Images/Background.svg" class="max-w-full h-auto" alt="Illustration">
             </div>
         </section>
 
-        <!-- About -->
-        <section id="about" class="py-16 px-4 md:px-12 lg:px-24 bg-gray-50">
+        <!-- Feature Section -->
+        <section id="features" class="py-16 px-4 md:px-12 lg:px-24 bg-gray-100">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="font-bold text-3xl md:text-4xl lg:text-5xl text-gray-800 mb-6">Key Features</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="flex flex-col items-center ">
+                        <img src="Images/feature1.jpeg" class="rounded-2xl w-32 h-32 md:w-48 md:h-48 mb-4"
+                            alt="Feature 1">
+                        <h3 class="font-semibold text-xl md:text-2xl mb-2">Real-time Messaging</h3>
+                        <p class="text-gray-600">Chatify allows users to send and receive messages instantly, creating a
+                            seamless chatting experience.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="flex flex-col items-center ">
+                        <img src="Images/feature2.jpeg" class="rounded-2xl placeholder:w-32 h-32 md:w-48 md:h-48 mb-4"
+                            alt="Feature 2">
+                        <h3 class="font-semibold text-xl md:text-2xl mb-2">User Authentication</h3>
+                        <p class="text-gray-600">Users can create accounts, log in, and securely authenticate themselves
+                            to access the chat features.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="flex flex-col items-center">
+                        <img src="Images/feature3.jpeg" class="rounded-2xl w-32 h-32 md:w-48 md:h-48 mb-4"
+                            alt="Feature 3">
+                        <h3 class="font-semibold text-xl md:text-2xl mb-2">Responsive Design</h3>
+                        <p class="text-gray-600">Chatify is designed to be responsive, ensuring a consistent user
+                            experience across various devices and screen sizes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 px-4 md:px-12 lg:px-24">
             <div class="max-w-4xl mx-auto text-center">
                 <h2 class="font-bold text-3xl md:text-4xl lg:text-5xl text-gray-800 mb-6">About Chatify</h2>
-                <p class="text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed">Chatify is a revolutionary
-                    platform designed to streamline online communication. Our mission is to break down barriers and make
-                    connecting with others as effortless as possible. With Chatify, you can enjoy real-time
-                    conversations without the hassle of downloads or installations. Whether it's for personal or
-                    professional use, Chatify offers a seamless chatting experience for everyone.</p>
+                <p class="text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed">Chatify is a project inspired by
+                    the need for seamless online communication. Developed as a Portfolio Project for Holberton School,
+                    our team aims to break down barriers and make connecting with others effortless.</p>
+
+                <!-- Project Repository Link -->
+                <div class="mt-8">
+                    <p class="text-lg text-gray-600">Find us on <a href="https://github.com/khaledmoussaaa/Chatify.git"
+                            class="text-blue-500 hover:underline" target="_blank"><i
+                                class="bi bi-github text-gray-500 text-2xl"></i> Github</a>.</p>
+                </div>
+
+                <!-- Team Members' Links -->
+                <div class="mt-8">
+                    <ul class="flex justify-center items-center">
+                        <li class="mx-4"><a href="https://github.com/khaledmoussaaa/Chatify.git" target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </section>
 
@@ -104,7 +153,7 @@
         <!-- Footer -->
         <footer class="bg-black text-white py-8 w-full border-t">
             <div class="container w-full mx-auto flex flex-col items-center justify-center">
-                <h2 class="text-2xl font-semibold mb-4">Connect Me</h2>
+                <h2 class="text-2xl font-semibold mb-4">Connection</h2>
                 <div class="container px-3 flex justify-between items-center">
                     <div>
                         <p class="text-sm">khaledmoussa909@gmail.com</p>
@@ -112,7 +161,7 @@
                         <p class="text-xs mt-4">&copy; 2024 Chatify. All Rights Reserved.</p>
                     </div>
                     <div class="flex gap-4 mb-4">
-                        <a href="#" class="text-blue-400 hover:text-blue-600">
+                        <a href="https://github.com/khaledmoussaaa" class="text-blue-400 hover:text-blue-600">
                             <i class="bi bi-github"></i>
                         </a>
                         <a href="#" class="text-gray-400 hover:text-gray-600">
@@ -120,6 +169,9 @@
                         </a>
                         <a href="#" class="text-green-400 hover:text-green-600">
                             <i class="bi bi-discord"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/khaled-moussaa" class="text-blue-200 hover:text-blue-400">
+                            <i class="bi bi-linkedin"></i>
                         </a>
                     </div>
                 </div>
