@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!-- External CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Internal CSS -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+        }
+
+        .menuMobile {
+            margin: 0;
+            padding: 20px !important;
+        }
+
+        @media (min-width: 640px) {}
+    </style>
+</head>
+
+<body class="bg-gray-100 scroll-smooth transition-all">
+    <div class="mx-auto">
+        <!-- Navbar -->
+        <nav id="navbar"
+            class="menuMobile transition-all sticky top-0 bg-gray-100 py-5 flex items-center justify-between border-b">
+            <h4 class="font-bold text-xl">Chatify.</h4>
+            <ul id="menu"
+                class="opacity-0 transition-all gap-5 pb-3 bg-gray-100 w-full absolute left-2/4 -bottom-28 transform -translate-x-2/4 flex items-center flex-col sm:opacity-100 sm:w-0 sm:flex-row sm:relative sm:left-0 sm:bottom-0 sm:translate-x-0">
+                <li class="hover:underline cursor-pointer">
+                    <a href="#product" onclick="toggle()">Product</a>
+                </li>
+                <li class="hover:underline cursor-pointer">
+                    <a href="#about" onclick="toggle()">About</a>
+                </li>
+                <li class="hover:underline cursor-pointer">
+                    <a href="#contact" onclick="toggle()">Contact</a>
+                </li>
+            </ul>
+
+            <div>
+                <button
+                    class="hidden sm:block bg-gray-900 text-white p-2 rounded-xl border-2 border-gray-900 transition-all font-semibold hover:bg-transparent hover:text-black">Get
+                    Started</button>
+            </div>
+
+            <i id="toggle" class="sm:hidden bi bi-list text-2xl hover:text-blue-600 cursor-pointer"
+                onclick="toggle()"></i>
+        </nav>
+
+        <!-- Landing -->
+        <section id="product" class="grid grid-cols-1 md:grid-cols-2 gap-8 py-16 px-4 md:px-12 lg:px-24">
+            <div class="flex flex-col justify-center">
+                <h2 class="font-bold text-3xl md:text-4xl lg:text-5xl text-gray-800 mb-6">One Click. Zero Friction.</h2>
+                <p class="text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed">Chatify revolutionizes online
+                    conversations by eliminating barriers and connecting users effortlessly. Say goodbye to tedious
+                    downloads and hello to instant, real-time connections. With Chatify, there's no need for additional
+                    steps or installations. It's simply you, your conversation partner, and seamless communication.
+                    Experience the ease of Chatify today for truly frictionless chatting.</p>
+            </div>
+            <div class="flex justify-center">
+                <img src="Background.svg" class="max-w-full h-auto" alt="Illustration">
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="py-16 px-4 md:px-12 lg:px-24 bg-gray-50">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="font-bold text-3xl md:text-4xl lg:text-5xl text-gray-800 mb-6">About Chatify</h2>
+                <p class="text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed">Chatify is a revolutionary
+                    platform designed to streamline online communication. Our mission is to break down barriers and make
+                    connecting with others as effortless as possible. With Chatify, you can enjoy real-time
+                    conversations without the hassle of downloads or installations. Whether it's for personal or
+                    professional use, Chatify offers a seamless chatting experience for everyone.</p>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="py-16 px-4 md:px-12 lg:px-24 bg-white">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="font-bold text-3xl md:text-4xl lg:text-5xl text-gray-800 mb-6">Contact Us</h2>
+                <p class="text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed">Have a question or feedback?
+                    We'd love to hear from you! Reach out to us using the form below or send us an email at <a
+                        href="mailto:info@chatify.com" class="text-blue-500 hover:underline">info@chatify.com</a>. We'll
+                    get back to you as soon as possible.</p>
+                <form action="#" method="post" class="mt-8">
+                    <input type="text" name="name" placeholder="Your Name"
+                        class="w-full py-3 px-4 mb-4 rounded-lg border border-gray-100 focus:outline-none focus:border-gray-300">
+                    <input type="email" name="email" placeholder="Your Email"
+                        class="w-full py-3 px-4 mb-4 rounded-lg border border-gray-100 focus:outline-none focus:border-gray-300">
+                    <textarea name="message" rows="5" placeholder="Your Message"
+                        class="w-full py-3 px-4 mb-4 rounded-lg border border-gray-100 focus:outline-none focus:border-gray-300"></textarea>
+                    <button type="submit"
+                        class="bg-[#3e3452] text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">Send
+                        Message</button>
+                </form>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="bg-black text-white py-8 w-full border-t">
+            <div class="container w-full mx-auto flex flex-col items-center justify-center">
+                <h2 class="text-2xl font-semibold mb-4">Connect Me</h2>
+                <div class="container px-3 flex justify-between items-center">
+                    <div>
+                        <p class="text-sm">khaledmoussa909@gmail.com</p>
+                        <p class="text-sm">01015571129</p>
+                        <p class="text-xs mt-4">&copy; 2024 Chatify. All Rights Reserved.</p>
+                    </div>
+                    <div class="flex gap-4 mb-4">
+                        <a href="#" class="text-blue-400 hover:text-blue-600">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-600">
+                            <i class="bi bi-slack"></i>
+                        </a>
+                        <a href="#" class="text-green-400 hover:text-green-600">
+                            <i class="bi bi-discord"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function toggle() {
+            var menu = document.getElementById('menu');
+            var toggleButton = document.getElementById('toggle');
+            var screenWidth = window.innerWidth;
+
+            if (screenWidth <= 640) {
+                if (menu.style.opacity == 0) {
+                    menu.style.opacity = 1;
+                    navbar.style.padding = "50px";
+                    navbar.style.marginBottom = "150px";
+                } else {
+                    menu.style.opacity = 0;
+                    navbar.style.padding = "20px";
+                    navbar.style.marginBottom = "0px";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
